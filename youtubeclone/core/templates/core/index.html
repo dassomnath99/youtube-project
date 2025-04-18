@@ -1,0 +1,75 @@
+
+{% extends "core/base.html" %}
+{% load static %}
+{% block title %}Home{% endblock title %}
+{% block header %}Home{% endblock header %}
+{% block content %}
+<div class="video-grid">
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="{% static "thumnails/thumbnail-1.webp" %}">
+            <div class="video-time">21:33</div>
+        </div>
+        <div class="video-info-grid">
+            <div class="channel-picture">
+                <img class="profile-picture" src="{% static "channels-pic\channel-1.jpeg" %}" alt="">
+            </div>
+            <div class="video-info">
+                <p class="video-title">
+                    I tried India's Worst Rated Airline 
+                </p>
+                <p class="video-author">
+                    Hugh Abroad
+                </p>
+                <p class="video-stats">
+                    172K views &middot; 5 Days ago
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="{% static "thumnails/thumbnail-2.webp" %}">
+            <div class="video-time">34:11</div>
+        </div>
+        <div class="video-info-grid">
+            <div class="channel-picture">
+                <img class="profile-picture" src="{% static "channels-pic\channel-2.jpeg" %}" alt="">
+            </div>
+            <div class="video-info">
+                <p class="video-title">
+                    Exposing Stupidly Expensive Things YouTubers Own
+                </p>
+                <p class="video-author">
+                    Airrack
+                </p>
+                <p class="video-stats">
+                    2.5M views &middot; 12 days ago
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="{% static "thumnails/thumbnail-3.webp" %}">
+            <div class="video-time">1:13:49</div>
+        </div>
+        <div class="video-info-grid">
+            <div class="channel-picture">
+                <img class="profile-picture" src="{% static "channels-pic\channel-3.jpeg" %}" alt="">
+            </div>
+            <div class="video-info">
+                <p class="video-title">
+                    How Many Days Can I Double $1?
+                </p>
+                <p class="video-author">
+                    Ryan Trahan
+                </p>
+                <p class="video-stats">
+                    7.3M views &middot; 6 days ago
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
