@@ -5,10 +5,15 @@
     font-size: 16px;
     border-width: 1px;
     border-style: solid;
+    border-width: 1px;
     border-color: gray;
     border-radius: 2px;
     box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
     width: 0;
+}
+.search-bar:active{
+    border-width: 1px;
+    border-color: lightblue;
 }
 .search-bar::placeholder{
     font-family: Roboto, arial;

@@ -5,28 +5,30 @@
 {% block header %}Home{% endblock header %}
 {% block content %}
 <div class="video-grid">
-    <div class="video-preview">
-        <div class="thumbnail-row">
-            <img class="thumbnail" src="{% static "thumnails/thumbnail-1.webp" %}">
-            <div class="video-time">21:33</div>
-        </div>
-        <div class="video-info-grid">
-            <div class="channel-picture">
-                <img class="profile-picture" src="{% static "channels-pic\channel-1.jpeg" %}" alt="">
+    {% for video in videos %}
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="{% static "thumnails/thumbnail-1.webp" %}">
+                <div class="video-time">21:33</div>
             </div>
-            <div class="video-info">
-                <p class="video-title">
-                    I tried India's Worst Rated Airline 
-                </p>
-                <p class="video-author">
-                    Hugh Abroad
-                </p>
-                <p class="video-stats">
-                    172K views &middot; 5 Days ago
-                </p>
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <img class="profile-picture" src="{% static "channels-pic\channel-1.jpeg" %}" alt="">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">
+                        I tried India's Worst Rated Airline 
+                    </p>
+                    <p class="video-author">
+                        Hugh Abroad
+                    </p>
+                    <p class="video-stats">
+                        172K views &middot; 5 Days ago
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
+    {% endfor %}
     <div class="video-preview">
         <div class="thumbnail-row">
             <img class="thumbnail" src="{% static "thumnails/thumbnail-2.webp" %}">
